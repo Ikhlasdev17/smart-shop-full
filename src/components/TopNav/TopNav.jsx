@@ -94,14 +94,18 @@ const TopNav = ({ collapsed, setCollapsed, width, setLogged }) => {
         <Dropdown overlay={brandMenu} placement="bottomLeft" className="dropdown">
           <span >
             <img src={brandIcon} alt="" />
+            <span className="txt">
             Brand Nomi
+            </span>
           </span>
         </Dropdown>
         <Dropdown overlay={languageMenu} placement="bottomLeft" className="dropdown">
             <span>
             <i className={`fi fi-${languages.filter(item => item.lang === currentLang)[0].icon} drop top-nav_icon`}></i>
             {" "}
+            <span className="txt">
             {currentLangLabel}
+            </span>
             </span>
         </Dropdown>
         <Dropdown overlay={profileMenu} placement="bottomLeft" >
